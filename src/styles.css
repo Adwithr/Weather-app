@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto";
+  background-color: rgb(33 33 33);
+  height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr;
+}
+
+.topBar {
+  grid-row: 1/2;
+  display: flex;
+  justify-content: center;
+  margin-top: 1.2em;
+}
+
+.topBar form {
+  display: flex;
+  align-items: center;
+  & button {
+    display: flex;
+    background-color: rgb(33 33 33);
+    border: 1px solid grey;
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+    padding: 0.35em;
+  }
+}
+
+.searchInput {
+  background-color: rgb(33, 33, 33);
+  width: 25em;
+  color: white;
+  padding: 0.6em;
+  border: 1px solid grey;
+  border-top-left-radius: 7px;
+  border-bottom-left-radius: 7px;
+  &::placeholder {
+    color: rgb(226, 215, 215);
+  }
+}
+
+.searchBtn {
+  height: 22.2px;
+  width: 22.2px;
+  cursor: pointer;
+}
+
+.mainContent {
+  grid-row: 2/3;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.weatherCard {
+  width: 580px;
+  display: grid;
+  grid-template-rows: auto auto auto;
+  border: 1px solid grey;
+  border-radius: 21px;
+  padding: 1.5em;
+  margin-top: -11em;
+}
+
+.location {
+  font-size: 19px;
+  margin-bottom: 1.5em;
+}
+
+.weatherData {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+}
+
+.leftInfo {
+  display: flex;
+  flex-direction: row;
+}
+
+.weatherInfo {
+  display: flex;
+  flex-direction: column;
+}
+
+.weatherIcon {
+  height: 105px;
+  width: 105px;
+}
+
+.weatherCondition {
+  font-size: 16.5px;
+}
+
+.temperature {
+  font-family: "Josefin Sans", "Roboto", sans-serif;
+  font-size: 40px;
+  margin-top: 0.5em;
+  margin-bottom: auto;
+  margin-left: 0.5em;
+  margin-right: 0.6em;
+}
+
+.division {
+  height: 100%;
+  width: 1px;
+  background-color: grey;
+}
+
+.rightInfo {
+  display: flex;
+  flex-direction: column;
+  margin-left: 1.2em;
+  gap: 0.35em;
+}
+
+.weatherValues {
+  display: flex;
+  justify-content: space-between;
+}
+
+.weatherDesc {
+  margin-top: 1.3em;
+  font-size: 16.5px;
+}

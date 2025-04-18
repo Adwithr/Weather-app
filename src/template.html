@@ -5,5 +5,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Weather App</title>
   </head>
-  <body></body>
+  <body>
+    <div class="topBar">
+      <form>
+        <input type="text" placeholder="Enter the city name" class="searchInput" required />
+        <button type="submit"><img src="./images/search.svg" alt="search" class="searchBtn" /></button>
+      </form>
+    </div>
+    <div class="mainContent">
+      <div class="weatherCard">
+        <div class="location"></div>
+        <div class="weatherData">
+          <div class="leftInfo">
+            <div class="weatherInfo">
+              <img src="./images/clear-day.svg" class="weatherIcon" />
+              <div class="weatherCondition"></div>
+            </div>
+            <div class="temperature"></div>
+          </div>
+          <div class="division"></div>
+          <div class="rightInfo">
+            <div class="weatherValues">
+              <div class="weatherValueTitle">Humidity</div>
+              <div class="weatherValue humidity"></div>
+            </div>
+            <div class="weatherValues">
+              <div class="weatherValueTitle">Feels like</div>
+              <div class="weatherValue feelsLike"></div>
+            </div>
+            <div class="weatherValues">
+              <div class="weatherValueTitle">Precipitation</div>
+              <div class="weatherValue precip"></div>
+            </div>
+            <div class="weatherValues">
+              <div class="weatherValueTitle">Wind Speed</div>
+              <div class="weatherValue windSpeed"></div>
+            </div>
+            <div class="weatherValues">
+              <div class="weatherValueTitle">UV Index</div>
+              <div class="weatherValue uvIndex"></div>
+            </div>
+          </div>
+        </div>
+        <div class="weatherDesc">Similar temperatures continuing with a chance of rain Wednesday & Thursday.</div>
+      </div>
+    </div>
+  </body>
 </html>
